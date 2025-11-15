@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* Mejoras de legibilidad para pantallas pequeñas */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 16px; /* Tamaño base para móviles */
+  line-height: 1.6;
+}
+
+/* Asegurar que el texto largo se ajuste correctamente */
+h1, h2, h3, h4, h5, h6, p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Mejorar la legibilidad en pantallas pequeñas */
+@media (max-width: 640px) {
+  body {
+    font-size: 15px;
+  }
+  
+  /* Asegurar que los botones sean táctiles en móviles */
+  button {
+    min-height: 44px; /* Tamaño mínimo recomendado para elementos táctiles */
+  }
+}
