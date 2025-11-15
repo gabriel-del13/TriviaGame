@@ -335,6 +335,7 @@ export default function Game() {
           <div className="mb-3 sm:mb-4 md:mb-5">
             {gameConfig?.timeLimit && (
               <Timer 
+                key={currentQuestionIndex}
                 timeLimit={gameConfig.timeLimit} 
                 onTimeUp={handleTimeUp}
                 isPaused={isAnswered}

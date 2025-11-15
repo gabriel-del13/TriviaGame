@@ -31,3 +31,5 @@ Thumbs.db
 
 DEPLOY.md
 .dockerignore
+env.prod
+trivia-game.tar.gz
